@@ -1,0 +1,8 @@
+site_name: Experimente
+site_author: pajowu
+copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>'
+theme: flatly
+repo_url: https://github.com/pajowu/minkorrekt-experimente
+pages:
+- Home: 'index.md'
+{{ PAGES }}
