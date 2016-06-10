@@ -5,7 +5,7 @@ before_script: bash .travis/before_script.sh
 install: pip install -r requirements.txt
 script:
 - bash .travis/build.sh
-- bash .travis/deploy.sh
+- '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && bash .travis/deploy.sh || false'
 env:
   global:
   - secure: fKyNAARZ9S9KmUE8cB+2Dbys7Z5a9hCbI3UBEOv9sFHMXYhsUy/pyjRlscKvLHjpxwsUqP/nukxbF2TovQlyfzwpYoaCVV4REP44Go4BP2b3vJtl5FM/ZryHmaNQhe20lJIbB/GPaEvEpPNZWq2tk1MnbTOm5luRKf75Nie/oQKrbImuBn79ZrGyNxgQA0t8XWEmV4Zy7By/89+U6vqBhVXfzuVicRs3OPgNqjmSvbgB/HbrgZs3CAkrnFqVzPRstWzKGLdScoTd7BwemPmmPdL30z3H3lxu8TmDuVjAVcP/M0i3I9zZR2z2ku2eQokLfoq7xofpeMRTS6aH2AEl65NJm1wRzh5/7mAulC804pp/UX04J+KOtExAF33QYzNbRA9JyEBHbZUruG/AWX3bAB0JUhgB4s6xWAIFn5TVdfNuNTB0BHKXqxwV2oud3UnB1tiBgyaNjI7MhygxYopT7YnYRZhyrhzwRRKqAEWkBRIIE+PCilRzG4mARDiViJwXU22TpYTtn94TXihf4DFxit7ARJztGkpRqwXaAkWUBdJDd9VkB4d5fHBgRQWrYC0OuCEoeI7DqU9RRIJ9SuIvOwjgqjXdOvrAy2nruSWCiUVS1YdBm1Qa4aFF4EAKi27A/EaNVk0451gI4DEBm3LGvJf2X8fBmP7Oupn6DoMDJa8=
