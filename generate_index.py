@@ -21,14 +21,14 @@ md_todo = ""
 for i in range(7,-1,-1):
 	i_str = str(i)
 	form = "docs/{}?.md".format(i)
-
-	yml_tmp = get_yml_data(glob.glob(form))
+	files = sorted(glob.glob(form), reverse=True)
+	yml_tmp = get_yml_data(files)
 	if yml_tmp != "":
 		yml += "- {0}0 - {0}9:\n".format(i)
 		yml += yml_tmp
 
 
-	md_tmp = get_index_data(glob.glob(form))
+	md_tmp = get_index_data(files)
 	if md_tmp != "":
 		md_done += "## Folge {0}0 - {0}9\n\n".format(i)
 		md_done += md_tmp
@@ -36,14 +36,14 @@ yml += "- Todo:\n"
 for i in range(7,-1,-1):
 	i_str = str(i)
 	form = "docs/todo/{}?.md".format(i)
-
-	yml_tmp = get_yml_data(glob.glob(form), "    ", "todo/")
+	files = sorted(glob.glob(form), reverse=True)
+	yml_tmp = get_yml_data(files, "    ", "todo/")
 	if yml_tmp != "":
 		yml += "  - {0}0 - {0}9:\n".format(i)
 		yml += yml_tmp
 
 
-	md_tmp = get_index_data(glob.glob(form), "todo/")
+	md_tmp = get_index_data(files, "todo/")
 	if md_tmp != "":
 		md_todo += "### Folge {0}0 - {0}9\n\n".format(i)
 		md_todo += md_tmp
