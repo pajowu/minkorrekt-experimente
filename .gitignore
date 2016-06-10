@@ -1,2 +1,4 @@
 *.tmp
 site/
+docs/index.md
+mkdocs.yml
