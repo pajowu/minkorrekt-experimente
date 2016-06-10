@@ -16,6 +16,10 @@
 
 [Die Lochlupe (Folge 50)](50.md)
 
+## Folge 00 - 09
+
+[Ei-Explosion (Folge 0)](00.md)
+
 
 
 ## Warum?
@@ -162,8 +166,6 @@
 
 [Lichtgeschwindigkeit in der Mikrowelle (Folge 5)](todo/05.md)
 
-[Ei-Explosion (Folge 0)](todo/00.md)
-
 [Der Cappuccino-Effekt (Folge 3)](todo/03.md)
 
 [Das Feuer-Karussell (Folge 9)](todo/09.md)
@@ -184,6 +186,8 @@
 
 ## Danke
 
-- [@Von_Claussen](https://twitter.com/Von_Claussen) für das Beschreiben des Experiments aus Folge 50
+- [@Von_Claussen](https://twitter.com/Von_Claussen) für das Beschreiben des Experiments aus [Folge 50](50.md)
 
-- [@katzenschiff](https://twitter.com/katzenschiff) für den Rahmenplanbezug zu Folge 73 und 75
+- [@katzenschiff](https://twitter.com/katzenschiff) für den Rahmenplanbezug zu Folge [73](73.md) und [75](75.md)
+
+- [@F7Smith](https://twitter.com/F7Smith) für das Beschreiben des Experiments aus [Folge 0](00.md)
