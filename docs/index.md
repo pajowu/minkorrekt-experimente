@@ -12,6 +12,10 @@
 
 [Party DNA Extraktion (Folge 74)](74.md)
 
+## Folge 50 - 59
+
+[Die Lochlupe (Folge 50)](50.md)
+
 
 
 ## Warum?
@@ -61,8 +65,6 @@
 [Teeblätterkarussell (Folge 56)](todo/56.md)
 
 [Der Salzkühlschrank (Folge 57)](todo/57.md)
-
-[Die Lochlupe (Folge 50)](todo/50.md)
 
 [Rakete 2.0 (Folge 58)](todo/58.md)
 
@@ -178,3 +180,10 @@
 
 [Frühstück in der Unterwelt (Folge 2)](todo/02.md)
 
+
+
+## Danke
+
+- [@Von_Claussen](https://twitter.com/Von_Claussen) für das Beschreiben des Experiments aus Folge 50
+
+- [@katzenschiff](https://twitter.com/katzenschiff) für den Rahmenplanbezug zu Folge 73 und 75
