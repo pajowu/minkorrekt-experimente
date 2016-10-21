@@ -1,6 +1,6 @@
 import glob
 import os
-def get_yml_data(files, prefix="  ", file_prefix = ""):
+def get_yml_data(files, prefix="    ", file_prefix = ""):
 	res = ""
 	for i in files:
 		with open(i) as mdfile:
@@ -15,7 +15,7 @@ def get_index_data(files, file_prefix = ""):
 			title_line = mdfile.readline().split("# ")[1].split("]")[0].replace("[","") + ")"
 			res += "[{}]({}{})\n\n".format(title_line, file_prefix, os.path.basename(i))
 	return res
-yml = ""
+yml = "- Experimente:\n"
 md_done = ""
 md_todo = ""
 for i in range(7,-1,-1):
@@ -24,7 +24,7 @@ for i in range(7,-1,-1):
 	files = sorted(glob.glob(form), reverse=True)
 	yml_tmp = get_yml_data(files)
 	if yml_tmp != "":
-		yml += "- {0}0 - {0}9:\n".format(i)
+		yml += "  - {0}0 - {0}9:\n".format(i)
 		yml += yml_tmp
 
 
