@@ -15,9 +15,11 @@ def get_index_data(files, file_prefix = ""):
 			title_line = mdfile.readline().split("# ")[1].split("]")[0].replace("[","") + ")"
 			res += "[{}]({}{})\n\n".format(title_line, file_prefix, os.path.basename(i))
 	return res
-yml = "- Experimente:\n"
+
 md_done = ""
 md_todo = ""
+
+yml = "- Experimente:\n"
 for i in range(7,-1,-1):
 	i_str = str(i)
 	form = "docs/{}?.md".format(i)
@@ -26,12 +28,11 @@ for i in range(7,-1,-1):
 	if yml_tmp != "":
 		yml += "  - {0}0 - {0}9:\n".format(i)
 		yml += yml_tmp
-
-
 	md_tmp = get_index_data(files)
 	if md_tmp != "":
 		md_done += "## Folge {0}0 - {0}9\n\n".format(i)
 		md_done += md_tmp
+
 yml += "- Todo:\n"
 for i in range(7,-1,-1):
 	i_str = str(i)
@@ -41,8 +42,6 @@ for i in range(7,-1,-1):
 	if yml_tmp != "":
 		yml += "  - {0}0 - {0}9:\n".format(i)
 		yml += yml_tmp
-
-
 	md_tmp = get_index_data(files, "todo/")
 	if md_tmp != "":
 		md_todo += "### Folge {0}0 - {0}9\n\n".format(i)
@@ -53,7 +52,6 @@ with open("mkdocs.yml.template") as tmpfile:
 	data = data.replace("{{ PAGES }}", yml)
 	with open("mkdocs.yml", "w") as outfile:
 		outfile.write(data)
-
 
 with open("docs/index.md.template") as tmpfile:
 	data = tmpfile.read()
